@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CustomRecycleVieweEditAdd</string>
+    <string name="object"><![CDATA[object&detail]]></string>
+    <string name="update">update</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="add">add</string>
+</resources>

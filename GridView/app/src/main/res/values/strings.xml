@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GridView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="name">
+        <item>hello</item>
+        <item>hello</item>
+    </string-array>
+</resources>

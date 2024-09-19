@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimpleInterestActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline_start"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_End"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="10dp" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_layout"
+        app:layout_constraintBottom_toTopOf="@id/nested_layout"
+        app:layout_constraintEnd_toStartOf="@id/guideline_End"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/simple_interest_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/calc_button"
+            android:drawableTop="@drawable/baseline_dashboard_24"
+            android:padding="40dp"
+            android:text="@string/simple_interest"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            />
+
+
+        <ImageButton
+
+            android:id="@+id/imagebutton1"
+            android:layout_width="62dp"
+            android:layout_height="69dp"
+            android:layout_alignLeft="@id/simple_interest_textview"
+
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="19dp"
+            android:background="@color/white"
+            android:src="@drawable/baseline_keyboard_double_arrow_left_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </RelativeLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nested_layout"
+        android:padding="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calc_button"
+        app:layout_constraintEnd_toStartOf="@id/guideline_End"
+         app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/relative_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/detail"
+            android:textSize="38sp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@id/principle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/principle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:drawableLeft="@drawable/baseline_money_24"
+            android:hint="@string/principle_amount"
+            android:layout_marginTop="20dp"
+            android:inputType="numberDecimal"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detail"
+            app:layout_constraintBottom_toTopOf="@id/rate"
+            />
+        <EditText
+            android:id="@+id/rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:hint="@string/interest_rate"
+            android:drawableLeft="@drawable/baseline_percent_24"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/principle"
+            app:layout_constraintBottom_toTopOf="@id/time"
+            />
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:hint="@string/time_period"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/baseline_access_time_24"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rate"
+            app:layout_constraintBottom_toTopOf="@id/show_result"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/show_result"
+            android:text="@string/show_result"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:background="@drawable/show_result_bg"
+            app:layout_constraintHorizontal_bias="0.8"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/time"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    :context=".DashBoard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_End"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="10dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/simple_interest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calc_button"
+        android:drawableTop="@drawable/baseline_dashboard_24"
+        android:padding="40dp"
+        android:text="@string/simple_interest"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/bmi"
+        app:layout_constraintEnd_toStartOf="@id/guideline_End"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bmi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calc_button"
+        android:drawableTop="@drawable/baseline_health_and_safety_24"
+        android:textAllCaps="false"
+        android:padding="45dp"
+        android:text="@string/bmi"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculator"
+        app:layout_constraintEnd_toStartOf="@id/guideline_End"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/simple_interest" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calculator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calc_button"
+        android:drawableTop="@drawable/baseline_calculate_24"
+        android:textAllCaps="false"
+        android:padding="45dp"
+        android:text="@string/calculator"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/unit_conversion"
+        app:layout_constraintEnd_toStartOf="@id/guideline_End"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/bmi" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/unit_conversion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calc_button"
+        android:drawableTop="@drawable/baseline_local_convenience_store_24"
+        android:textAllCaps="false"
+        android:padding="45dp"
+        android:text="@string/unit_conversion"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_End"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/calculator" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

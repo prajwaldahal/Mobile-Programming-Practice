@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Identity2</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="name_prajwal_dahal">Name=Prajwal Dahal</string>
+    <string name="level_bca_6th_sem">Level=BCA 6th sem</string>
+    <string name="address_morang">Address=Morang</string>
+    <string name="identity">identity</string>
+    <string name="funfact">FUNFACT😂</string>
+    <string name="i_can_celebrate_my_birthday_twice_in_a_year">I Can Celebrate My Birthday Twice In a Year</string>
+    <string name="funfact1">funfact</string>
+    <string name="i_have_celebrate_birthday_twice_in_a_year">I have celebrate birthday twice in a year</string>
+    <string name="Identity">Identity</string>
+</resources>

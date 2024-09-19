@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name_add"
+                android:layout_width="match_parent"
+                android:hint="enter a name"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+            <EditText
+                android:id="@+id/phone_add"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="enter a phone "
+                android:padding="8dp"
+                 />
+
+            <EditText
+                android:id="@+id/email_add"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="enter a email"
+                android:layout_gravity="end"
+                android:padding="8dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="add" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

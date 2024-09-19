@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CalcoBox</string>
+    <string name="simple_interest">Simple Interest</string>
+    <string name="bmi">BMI</string>
+    <string name="calculator">Calculator</string>
+    <string name="unit_conversion">Unit Conversion</string>
+    <string name="detail">please provide following details</string>
+    <string name="principle_amount">Principle Amount</string>
+    <string name="interest_rate">Interest Rate</string>
+    <string name="time_period">Time period</string>
+    <string name="show_result">show result</string>
+    <string name="okay">Okay</string>
+    <string name="no_result">no result</string>
+    <string name="comming_soon">comming soon</string>
+</resources>

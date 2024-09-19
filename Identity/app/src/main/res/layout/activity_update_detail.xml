@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateDetailActivity">
+    <EditText
+        android:id="@+id/nameedt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="enter your name"
+        />
+    <EditText
+        android:id="@+id/ageedt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="enter your age"
+        />
+    <EditText
+        android:id="@+id/addressedt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="enter your address"
+        />
+    <EditText
+        android:id="@+id/phonedt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="enter your phone"
+        />
+    <Button
+        android:id="@+id/update_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update data"
+        />
+
+</LinearLayout>

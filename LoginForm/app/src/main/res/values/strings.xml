@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LoginForm</string>
+    <string-array name="District">
+        <item>Select one</item>
+        <item>Kathmandu</item>
+        <item>Bhaktapur</item>
+        <item>Morang</item>
+        <item>Jhapa</item>
+        <item>Kailali</item>
+        <item>Banke</item>
+        <item>Sindhuli</item>
+    </string-array>
+</resources>

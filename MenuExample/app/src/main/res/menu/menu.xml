@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:title="home">Home</item>
+    <item android:id="@+id/about_us"
+        android:title="About us">About Us</item>
+    <item android:id="@+id/rate_us"
+        android:title="Share">Share</item>
+    <item android:id="@+id/context_menu"
+        android:title="contextmenu">context menu</item>
+    <item android:id="@+id/popup_menu"
+        android:title="popup menu">popup menu</item>
+
+</menu>

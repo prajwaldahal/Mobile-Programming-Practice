@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LayoutExample</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="ok">Ok</string>
+    <string name="back">back</string>
+    <string name="cancel">cancel</string>
+    <string name="this_is_linear_layout">this is Linear layout</string>
+    <string name="layout_example">layout Example</string>
+    <string name="on">ON</string>
+    <string name="vol_n">vol\n+</string>
+    <string name="volm">vol\n-</string>
+    <string name="channel_n">channel\n+</string>
+    <string name="channeld">channel\n-</string>
+    <string name="mute">Mute</string>
+</resources>
